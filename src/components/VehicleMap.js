@@ -126,7 +126,7 @@ const VehicleMap = () => {
 
 
     // --- 1️⃣ Load Roads GeoJSON ---
-    fetch('/greater_tamale_road.geojson')
+    fetch(`${process.env.PUBLIC_URL}/greater_tamale_road.geojson`)
       .then(res => res.json())
       .then(data => {
         const format = new GeoJSON();
